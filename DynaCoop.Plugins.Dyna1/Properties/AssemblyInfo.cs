@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DynaCoop.JS")]
+[assembly: AssemblyTitle("DynaCoop.Plugins.Dyna1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DynaCoop.JS")]
+[assembly: AssemblyProduct("DynaCoop.Plugins.Dyna1")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("67656c08-98ef-4e68-94fa-380fb386da82")]
+[assembly: Guid("0c5ab334-7540-4af9-a4a1-213840da49e4")]
 
 // Version information for an assembly consists of the following four values:
 //
