@@ -14,6 +14,7 @@ namespace DynaCoop.Plugins.Dyna1.Gerenciador
             Entity produto = ProdutoRepositorio.ValidarGrupoUnidade(serviceDyna1, serviceDyna2, target);
             produto = ProdutoRepositorio.ValidarUnidade(serviceDyna1, serviceDyna2, produto);
             produto = ProdutoRepositorio.ValidarAssunto(serviceDyna1, serviceDyna2, produto);
+            produto["new_bloquearcriacao"] = false; // valor do Não
             serviceDyna2.Create(produto);
         }
     }

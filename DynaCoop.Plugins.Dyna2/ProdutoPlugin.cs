@@ -9,9 +9,14 @@ namespace DynaCoop.Plugins.Dyna2
         public override void ExecutePlugin(IServiceProvider serviceProvider)
         {
             if (Context.MessageName == "Create" &&
-                Context.Stage == (int)EPluginStages.PreValidation)
+                Context.Stage == (int)EPluginStages.PreValidation &&
+                Context.InputParameters.Contains("Target") &&
+                    Context.InputParameters["Target"] is Entity)
             {
-                throw new InvalidPluginExecutionException("Não é possivel criar produto no ambiente Dynamics 2, para criação de produtos utilize o ambiente Dynamics 1");
+                var product = (Entity)Context.InputParameters["Target"]; // para converter e pegar a entidade
+
+                if ((bool)product["new_bloquearcriacao"] == true)
+                    throw new InvalidPluginExecutionException("Não é possivel criar produto no ambiente Dynamics 2, para criação de produtos utilize o ambiente Dynamics 1");
             }
         }
     }
