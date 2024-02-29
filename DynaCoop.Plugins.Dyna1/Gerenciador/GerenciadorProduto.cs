@@ -1,5 +1,5 @@
 ﻿using DynaCoop.Plugins.Dyna1.Utilidades;
-using DynaCoop.Plugins.Repositorio;
+using DynaCoop.Plugins.Dyna1.Repositorio;
 using Microsoft.Xrm.Sdk;
 
 namespace DynaCoop.Plugins.Dyna1.Gerenciador

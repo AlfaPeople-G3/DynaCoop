@@ -217,12 +217,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Gerenciador\GerenciadorOportunidade.cs" />
     <Compile Include="Gerenciador\GerenciadorProduto.cs" />
+    <Compile Include="OportunidadePlugin.cs" />
     <Compile Include="ProdutoPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\OportunidadeRepositorio.cs" />
     <Compile Include="Repositorio\ProdutoRepositorio.cs" />
     <Compile Include="Utilidades\ConexaoDyna2.cs" />
     <Compile Include="Utilidades\PluginImplement.cs" />
+    <Compile Include="Utilidades\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

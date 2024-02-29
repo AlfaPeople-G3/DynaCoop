@@ -3,7 +3,7 @@ using Microsoft.Xrm.Sdk.Query;
 using System;
 using System.Linq;
 
-namespace DynaCoop.Plugins.Repositorio
+namespace DynaCoop.Plugins.Dyna1.Repositorio
 {
     public class ProdutoRepositorio
     {
@@ -16,7 +16,7 @@ namespace DynaCoop.Plugins.Repositorio
                 Guid idGrupoUnidade = productReturn.GetAttributeValue<EntityReference>("defaultuomscheduleid").Id;
 
                 QueryExpression queryGrupoUnidade = new QueryExpression("uomschedule");
-                queryGrupoUnidade.ColumnSet.AddColumns("name", "baseuomname");
+                queryGrupoUnidade.ColumnSet.AddColumns("name", "baseuomname", "description");
                 queryGrupoUnidade.Criteria.AddCondition("name", ConditionOperator.NotEqual, "Unidade Padrão");
                 queryGrupoUnidade.Criteria.AddCondition("uomscheduleid", ConditionOperator.Equal, idGrupoUnidade);
                 EntityCollection grupoUnid = serviceDyna1.RetrieveMultiple(queryGrupoUnidade);
