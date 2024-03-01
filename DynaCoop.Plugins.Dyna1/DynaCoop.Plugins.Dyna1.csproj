@@ -219,6 +219,7 @@
   <ItemGroup>
     <Compile Include="Gerenciador\GerenciadorOportunidade.cs" />
     <Compile Include="Gerenciador\GerenciadorProduto.cs" />
+    <Compile Include="OportunidadeIdPlugin.cs" />
     <Compile Include="OportunidadePlugin.cs" />
     <Compile Include="ProdutoPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

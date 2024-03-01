@@ -11,6 +11,7 @@ DynaCoop2.Opportunity = {
         let eIntegrado = formContext.getAttribute("new_integracao").getValue();
 
         if (eIntegrado) {
+            formContext.getControl("opportunityproductsGrid").setDisabled(true);
             //Percorre todos o campos da tela para desabilitar.
             formContext.data.entity.attributes.forEach(function (attr) {
                 attr.controls.forEach(function (c) {

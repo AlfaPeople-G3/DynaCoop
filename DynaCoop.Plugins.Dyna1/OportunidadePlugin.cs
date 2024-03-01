@@ -9,7 +9,8 @@ namespace DynaCoop.Plugins.Dyna1
     {
         public override void ExecutePlugin(IServiceProvider serviceProvider)
         {
-            try { 
+            try 
+            { 
                 if (Context.MessageName == "Create")
                 {
                     IOrganizationService serviceDyna2 = ConexaoDyna2.GetService();
