@@ -12,10 +12,15 @@ namespace DynaCoop.Plugins.Dyna2
                 Context.InputParameters.Contains("Target") &&
                     Context.InputParameters["Target"] is Entity)
             {
-                var product = (Entity)Context.InputParameters["Target"]; // para converter e pegar a entidade
+                var opportunity = (Entity)Context.InputParameters["Target"]; // para converter e pegar a entidade
 
-                if ((bool)product["new_integracao"])
+                if ((bool)opportunity["new_integracao"])
                     throw new InvalidPluginExecutionException("Não é possivel editar Oportunidades criadas via integração.");
+            }
+            else
+            {
+                throw new InvalidPluginExecutionException($"Ação:{Context.MessageName}");
+
             }
         }
     }

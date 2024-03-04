@@ -19,6 +19,9 @@ namespace DynaCoop.Plugins.Dyna1
                     var gerenciador = new GerenciadorOportunidade();
 
                     var oportunidade2 = gerenciador.CopiarOportuniade(Service, serviceDyna2, opportunity);
+                    var identificador = gerenciador.CriarIdentificador(Service, opportunity);
+
+                    oportunidade2["new_identificador"] = identificador;
 
                     serviceDyna2.Create(oportunidade2);
                 }
