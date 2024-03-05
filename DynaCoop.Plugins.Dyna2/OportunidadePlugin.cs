@@ -17,6 +17,14 @@ namespace DynaCoop.Plugins.Dyna2
                 if ((bool)opportunity["new_integracao"])
                     throw new InvalidPluginExecutionException("Não é possivel editar Oportunidades criadas via integração.");
             }
+            if(Context.MessageName == "Create")
+            {
+                var opportunity = (Entity)Context.InputParameters["Target"];
+                var maneger = new OpportunityManager();
+
+                maneger.CriarIdentificador(Service, opportunity);
+
+            }
             else
             {
                 throw new InvalidPluginExecutionException($"Ação:{Context.MessageName}");

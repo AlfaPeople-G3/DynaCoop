@@ -124,7 +124,10 @@
     <Compile Include="ProdutoPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilidades\EPluginStages.cs" />
+    <Compile Include="Utilidades\OpportunitManager.cs" />
+    <Compile Include="Utilidades\OpportunityRepository.cs" />
     <Compile Include="Utilidades\PluginImplement.cs" />
+    <Compile Include="Utilidades\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Gerenciador\" />
